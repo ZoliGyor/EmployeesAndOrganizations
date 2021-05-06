@@ -18,4 +18,12 @@ public class Organization{
     public void increaseNumberOfEmployees(int number){
         this.numberOfEmployees += number;
     }
+
+    public void decreaseNmmberOfEmployees(int number){
+        this.numberOfEmployees -= number;
+    }
+
+    public void report(){
+        System.out.println("At " + this.name + ", we currently have " + this.getNumberOfEmployees() + " employee(s).");
+    }
 }
